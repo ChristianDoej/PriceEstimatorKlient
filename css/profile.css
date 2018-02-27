@@ -1,0 +1,38 @@
+
+#main {
+    width: 800px;
+    margin-left:auto;
+    margin-right:auto;
+    background-color:white;
+
+}
+a {
+    text-decoration:none;
+    color:black;
+}
+
+#title1 {
+    align-content: center;
+    background-color: ghostwhite;
+    text-align: center;
+
+}
+.navButtons {
+    align-content:center;
+    border:1px solid #566963;
+    display:inline-block;
+    cursor:pointer;
+    font-family:Arial;
+    font-size:15px;
+    font-weight:bold;
+    padding:20px 30px;
+    text-decoration:none;
+}
+.navButtons:active {
+    position:relative;
+    top:1px;
+}
+
+.navButtons:hover {
+    background-color:#6c7c7c;
+}

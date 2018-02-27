@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Quiz</title>
+    <link rel="stylesheet" type="text/css" href="../css/createQuiz.css"/>
+
+</head>
+<body>
+<div id="main">
+
+    <h1 id="title1"><a href="frontpage.html">EksamensQuiz!</a></h1>
+    <div id="nav">
+        <form>
+            <input class="navButtons" id="takeQuizBtn" type="button" value="Quiz!"
+                   onclick="document.location.href='takeQuiz.html'">
+            <input class="navButtons" id="startBtn" type="button" value="Se profil"
+                   onclick="document.location.href='profile.html'">
+            <input class="navButtons" id="quizBtn" type="button" value="Lav en Quiz!" onclick="testingCreate();">
+            <input class="navButtons" id="deleteQuizBtn" type="button" value="Slet en quiz" onclick="testingDelete();">
+            <input class="navButtons" id="logoutBtn" type="button" value="Logout!"
+                   onclick="document.location.href='start.html'; localStorage.clear()">
+        </form>
+    </div>
+    <div id="content">
+        <div id="leftSide">
+            <h3>Lav en Quiz!</h3>
+            <p>Vælg et fag:</p>
+            <div id="loadedCourses"></div>
+            <form id="questionChoices"></form>
+            <div id="reset">
+                <form id="done"></form>
+            </div>
+        </div>
+        <div id="middle">
+            <div id="quiz"></div>
+            <form id="inputBtn"></form>
+        </div>
+        <div id="rightSide">
+            <form id="options"></form>
+        </div>
+    </div>
+
+</div>
+
+<script src="../js/quiz.js"></script>
+<script src="../lib/js/jquery-3.2.1.js"></script>
+<script src="../js/createQuiz.js"></script>
+</body>
+</html>
