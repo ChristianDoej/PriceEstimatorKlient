@@ -21,7 +21,7 @@ $('#loginBtn').on('click', function () {
             let cryptedData = encryptDecrypt(data);
            // console.log(cryptedData);
             localStorage.setItem('token', cryptedData);
-            document.location.href = "frontpage.html";
+            document.location.href = "createEvent.html";
         }, error: function () {
             alert("Dit password matcher ikke dit brugernavn");
             document.getElementById('name').value = "";

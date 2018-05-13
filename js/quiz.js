@@ -2,7 +2,7 @@
 
 
 function encryptDecrypt(input) {
-    var e =0;
+    var e =1;
     var key = ['L', 'Y', 'N'];
     var out = "";
     for (var i = 0; i < input.length; i++) {
